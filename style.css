@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    color: inherit;
+    outline: none;
+}
+
+body{
+    text-align: center;
+    background: #193549;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+:root{
+    --base:#ffc600;
+    --spacing:10px;
+    --blur:10px;
+    --height:10vh;
+    --rotate:0deg;
+    --radius:0px;
+}
+
+img{
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    height: var(--height);
+    transform: rotate(var(--rotate));
+    border-radius: var(--radius);
+}
+
+h2{
+    color: var(--base);
+}
+
+.controls{
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+input{
+    width: 100px;
+}

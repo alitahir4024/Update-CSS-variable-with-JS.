@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS-P3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Update CSS variable with JS</h2>
+
+    <div class="controls">
+
+        <label for="spacing">Spacing:</label>
+
+        <input type="range" id="spacing" min="10" max="200" value="10" name="spacing" data-sizing="px">
+
+        <label for="blur">Blur:</label>
+
+        <input type="range" id="blur" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+        <label for="base">Base Color</label>
+
+        <input type="color" name="base" id="base" value="#ffc600">
+
+        <label for="height"> Height </label>
+
+        <input type="range" name="height" id="height" min="10" max="100" data-sizing="vh" value="10">
+
+        <label for="rotate"> Rotate </label>
+
+        <input type="range" name="rotate" id="rotate" min="0" max="360" data-sizing="deg" value="0">
+
+        <label for="radius"> Radius </label>
+
+        <input type="range" name="radius" id="radius" min="0" max="100" data-sizing="px" value="0" >
+
+    </div>
+
+    <img src="82528602_845598082535414_6936156667733234811_n.jpg" alt="">
+
+</body>
+<script>
+
+    var inputs = document.querySelectorAll(".controls input ");
+
+    function handler(){
+        const suffix =this.dataset.sizing || "";
+        document.documentElement.style.setProperty(
+            `--${this.name}`,
+            this.value+suffix
+        );
+    }
+
+    inputs.forEach(input=>input.addEventListener("change",handler));
+    inputs.forEach(input=>input.addEventListener("mousemove",handler));
+
+</script>
+
+</html>
