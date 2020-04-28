@@ -26,6 +26,6 @@ In this project CSS variables are updated using JS.
 
 * Input type range: (https://www.w3schools.com/tags/att_input_type_range.asp).
 
-## Project Previwe:
+## Project Preview:
 
 (https://ali-tahir4024.github.io/Update-CSS-variable-with-JS./)
