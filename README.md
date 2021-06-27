@@ -28,4 +28,4 @@ In this project CSS variables are updated using JS.
 
 ## Project Preview:
 
-(https://ali-tahir4024.github.io/Update-CSS-variable-with-JS./)
+[Update CSS Variables With JS](https://alitahir4024.github.io/Update-CSS-variable-with-JS./)
